@@ -1,0 +1,4 @@
+
+gpg --dearmor |sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
+
+wget https://releases.hashicorp.com/terraform/1.4.6/terraform_1.4.6_linux_amd64.zip

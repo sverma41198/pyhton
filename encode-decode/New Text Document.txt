@@ -1,0 +1,9 @@
+s=input("Enter a string:")
+new=""
+for  i in s:
+    if i.islower():
+        new+=chr(97+25-(ord(i)+25-122))
+    else:
+        new+=chr(97+25-(ord(i.lower())+25-122)).upper()
+        
+print(new)

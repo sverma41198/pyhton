@@ -1,0 +1,16 @@
+class digit:
+    
+    def add_digit(self,num):
+        n=num
+        sum=0
+        while n>0:
+            sum+=n%10
+            n=n//10
+        if sum<10:
+            return sum
+        else:
+            return self.add_digit(sum)
+        
+n=68
+obj=digit().add_digit(n)
+print(obj)

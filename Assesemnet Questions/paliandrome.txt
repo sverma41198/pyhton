@@ -1,0 +1,10 @@
+string="131 Mom monster a 1330 mom 1331"
+string=string.lower()
+counter=0
+for i in string.split():
+    if len(i)==1:
+        continue
+        
+    elif i==i[::-1]:
+        counter+=1
+print(counter)        

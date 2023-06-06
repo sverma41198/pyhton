@@ -1,0 +1,24 @@
+string="My name is sourabh verma"
+string=string.split()
+maximum=0
+for ele in string:
+    maximum=max(maximum,len(ele))
+print(string)
+new_string=""
+c_index=0
+
+while c_index<maximum:
+        
+    for ele in string:
+        if c_index>=len(ele):
+            continue
+        else:
+            new_string+=ele[c_index]
+    new_string+=" "
+    c_index+=1
+print(new_string)
+
+Output:
+
+['My', 'name', 'is', 'sourabh', 'verma']
+Mnisv yasoe mur erm aa b h 

@@ -1,0 +1,17 @@
+word="hello hemat"
+vowel=[]
+for index in list(word):
+    if index in list('aeiou') or index in list('AEIOU'):
+        vowel.append(index)
+        
+vowel=vowel[::-1]
+counter=0
+for index in range(len(word)):
+    if word[index]  in list('aeiou') or word[index] in list('AEIOU'):
+        word=word[:index]+vowel[counter]+word[index+1:]
+        counter+=1
+        
+print(word)
+
+OUTPUT
+halle homet

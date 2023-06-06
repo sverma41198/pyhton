@@ -1,0 +1,19 @@
+l1=["siya","priya","jiya"]
+l2=[170,120,130]
+for i in range(len(l2)):
+    min=i
+    for j in range(i+1,len(l2)):
+        if l2[j]<l2[min]:
+            min=j
+    
+    temp1=l1[min]
+    l1[min]=l1[i]
+    l1[i]=temp1
+    temp2=l2[min]
+    l2[min]=l2[i]
+    l2[i]=temp1
+    
+print(l1)
+
+
+using build-in functions

@@ -1,0 +1,19 @@
+sort three numbers using only if satement
+a,b,c=15,8,20
+
+if a>b:
+    b,a=a,b
+if b>c:
+    c,b=b,c
+print(a,b,c)
+
+
+maxof :
+a,b,c=10,18,15
+
+if a>b:
+    b=a
+if b>c:
+    c=b
+print(c)
+

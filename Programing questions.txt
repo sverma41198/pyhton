@@ -1,0 +1,28 @@
+Q1.[2,2,2,6,7,7,1,1]  find the min elements you can change to equal all the element  of the given array.
+l=[2,2,2,6,7,7,7,1,1]
+d={}
+for i in l:
+    if i not in  d:
+        d[i]=1
+    else:
+        d[i]+=1
+print(d)
+max=0
+mode=0
+for i in d:
+    if d[i]>mode:
+        max=d[i]
+        mode=i
+print(mode)
+print(len(l)-l.count(mode))
+
+Q2. Input :Sourabh  OUTPUT : uoSrhba  OR INPUT: Nikhil OUTPUT:kiNlih
+
+Q3. Indeces where sum of L=R
+Example: [2,2,5,3,1]
+	Output: 2
+
+Q3. Permutation and Combination 
+i] Phone Number
+ii] Name Plate
+
